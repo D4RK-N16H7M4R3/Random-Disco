@@ -1,0 +1,26 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+}
+
+.disco-light {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background-color: white;
+    box-shadow: 0 0 50px white;
+    animation: colorChange 1s infinite;
+}
+
+@keyframes colorChange {
+    0% { background-color: red; box-shadow: 0 0 50px red; }
+    25% { background-color: blue; box-shadow: 0 0 50px blue; }
+    50% { background-color: green; box-shadow: 0 0 50px green; }
+    75% { background-color: yellow; box-shadow: 0 0 50px yellow; }
+    100% { background-color: red; box-shadow: 0 0 50px red; }
+}
